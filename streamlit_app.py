@@ -18,7 +18,7 @@ def main():
     
     m = leafmap.Map(center=[50, -110], zoom=2)
     # polygons = 'https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_states.json'
-    m.add_geojson(merge, layer_name="Countries")
+    m.add_json(merge, layer_name="Countries")
     m.to_streamlit(width=400, height=800)
 
     # merge2= geopandas.read_file('periferies.json')
