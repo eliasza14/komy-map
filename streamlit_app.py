@@ -6,7 +6,7 @@ from   streamlit_folium import st_folium
 APP_TITLE= 'KOMMY MAP VISUALIZATION'
 APP_SUB_TITLE='CMT PROOPTIKI 2022'
 
-merge= geopandas.read_file('per_enotites.json')
+merge= geopandas.read_file('per_enotites.geojson')
 
 def main():
     st.set_page_config(APP_TITLE)
