@@ -1,6 +1,7 @@
 import streamlit as st
 import geopandas
 import folium
+from streamlit_folium import st_folium
 
 APP_TITLE= 'KOMMY MAP VISUALIZATION'
 APP_SUB_TITLE='CMT PROOPTIKI 2022'
@@ -68,8 +69,8 @@ def main():
     folium.TileLayer('Cartodb Positron', overlay=False, control=True).add_to(m)  # use folium to add alternative tiles
     folium.LayerControl(collapsed=False).add_to(m)  # use folium to add layer control
 
-    st.write(m)   
-    
+    #st.write(m)   
+    st_data=st_folium(m,width=725)
 
 if __name__ == "__main__":
     main()
