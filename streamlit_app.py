@@ -13,7 +13,7 @@ def main():
     st.set_page_config(APP_TITLE)
     st.title(APP_TITLE)
 
-    merge=str( geopandas.read_file('per_enotites.geojson'))
+    merge= geopandas.read_file('per_enotites.json')
 
     
     m = leafmap.Map(center=[50, -110], zoom=2)
