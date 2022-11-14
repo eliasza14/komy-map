@@ -19,7 +19,7 @@ def main():
     columns_view=['Περιφερειακή Ενότητα','Πληθυσμός', 'ΚΟΜΥ']
 
     columns_view2=['Περιφέρεια','Πληθυσμός', 'ΚΟΜΥ']
-
+    st.write('Breakpoint 1')
     m = merge.explore(
      location=[40,23],
      zoom_start=6,
@@ -36,7 +36,7 @@ def main():
     show=False)
 
 
-
+    st.write('Breakpoint 2')
 
     merge2.explore(
         m=m, # pass the map object
@@ -61,6 +61,7 @@ def main():
     folium.TileLayer('Cartodb Positron', overlay=False, control=True).add_to(m)  # use folium to add alternative tiles
     folium.LayerControl(collapsed=False).add_to(m)  # use folium to add layer control
 
+    st.write('Breakpoint 3')
     #st.write(m)   
     st_folium(m)
 
