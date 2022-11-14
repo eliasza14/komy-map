@@ -11,12 +11,12 @@ geopandas
 # jupyter-server-proxy
 keplergl
 leafmap
-localtileserver
-# nbserverproxy
-# owslib
-palettable
-plotly
-streamlit-bokeh-events
+# localtileserver
+# # nbserverproxy
+# # owslib
+# palettable
+# plotly
+# streamlit-bokeh-events
 streamlit-folium
 streamlit-keplergl
 pip
