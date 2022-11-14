@@ -62,10 +62,10 @@ def main():
 
     folium.TileLayer('Cartodb Positron', overlay=False, control=True).add_to(m)  # use folium to add alternative tiles
     folium.LayerControl(collapsed=False).add_to(m)  # use folium to add layer control
-
+    m
     st.write('Breakpoint 3')
     #st.write(m)   
-    st_folium(m)
+    # st_folium(m)
 
 if __name__ == "__main__":
     main()
