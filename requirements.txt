@@ -8,15 +8,15 @@ matplotlib
 mapclassify
 geemap
 geopandas
-jupyter-server-proxy
+# jupyter-server-proxy
 keplergl
 leafmap
 localtileserver
-nbserverproxy
-owslib
+# nbserverproxy
+# owslib
 palettable
 plotly
 streamlit-bokeh-events
 streamlit-folium
 streamlit-keplergl
-tropycal
+# tropycal
