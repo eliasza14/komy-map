@@ -19,4 +19,5 @@ plotly
 streamlit-bokeh-events
 streamlit-folium
 streamlit-keplergl
+pip
 # tropycal
