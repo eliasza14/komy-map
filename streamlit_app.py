@@ -38,10 +38,10 @@ def main():
     #cm.plot_colormap(colors=cm.palettes.dem, axis_off=True)
     #cm.palettes.ndvi
     #cm.plot_colormap(colors=cm.palettes.ndvi)
-    data = leafmap.examples.datasets.countries_geojson
+    #data = leafmap.examples.datasets.countries_geojson
     m = leafmap.Map()
     m.add_data(
-    data, column='POP_EST', scheme='Quantiles', cmap='Blues', legend_title='Population'
+    url, column='Πληθυσμός', scheme='Quantiles', cmap='Blues', legend_title='Population'
     )
     m.to_streamlit(width=400, height=800)
 
