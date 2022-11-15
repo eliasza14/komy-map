@@ -3,6 +3,7 @@ import geopandas as gpd
 import folium
 from   streamlit_folium import st_folium
 import leafmap.kepler as leafmap
+import leafmap.colormaps as cm
 APP_TITLE= 'KOMMY MAP VISUALIZATION'
 APP_SUB_TITLE='CMT PROOPTIKI 2022'
 
@@ -18,6 +19,7 @@ def main():
     m = leafmap.Map(center=[50, -110], zoom=2)
     polygons = 'https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_states.json'
     m.add_geojson(url, layer_name="Countries")
+    m.plot_colormap(colors=cm.get_palette('terrain', n_class=8))
     m.to_streamlit(width=400, height=800)
     
     # m.add_gdf(url, layer_name="Countries")
