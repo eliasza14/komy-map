@@ -19,7 +19,11 @@ def main():
     m = leafmap.Map(center=[50, -110], zoom=2)
     polygons = 'https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_states.json'
     m.add_geojson(url, layer_name="Countries")
-    m.add_colormap('Πληθυσμός')
+    m.add_colormap('Πληθυσμός'width=8.0,
+    height=0.4,
+    orientation='horizontal',
+    vmin=0,
+    vmax=4000,)
     m.to_streamlit(width=400, height=800)
     
     # m.add_gdf(url, layer_name="Countries")
