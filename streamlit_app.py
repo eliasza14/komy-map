@@ -36,7 +36,7 @@ def main():
         name="periferiakes enotites", # name of the layer in the map
         show=False
     )
-    merge.to_streamlit(width=400, height=800)
+    m.to_streamlit(width=400, height=800)
 
     # merge2= geopandas.read_file('periferies.json')
 
