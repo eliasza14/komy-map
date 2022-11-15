@@ -21,6 +21,23 @@ def main():
     m.add_geojson(url, layer_name="Countries")
     m.to_streamlit(width=400, height=800)
 
+    m = m.explore(
+        location=[40,23],
+        zoom_start=6,
+        tiles=None,
+        column="Πληθυσμός",  # make choropleth based on "BoroName" column
+        scheme="naturalbreaks",  # use mapclassify's natural breaks scheme
+        tooltip=columns_view,
+        popup=columns_view,
+        cmap="Greens",
+        legend=True, # show legend
+        k=10, # use 10 bins
+        legend_kwds=dict(colorbar=False), # do not use colorbar
+        name="periferiakes enotites", # name of the layer in the map
+        show=False
+    )
+    m.to_streamlit(width=400, height=800)
+
     # merge2= geopandas.read_file('periferies.json')
 
     # columns_view=['Περιφερειακή Ενότητα','Πληθυσμός', 'ΚΟΜΥ']
