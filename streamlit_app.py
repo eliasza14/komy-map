@@ -4,6 +4,7 @@ import folium
 from   streamlit_folium import st_folium
 import leafmap.kepler as leafmap
 import leafmap.colormaps as cm
+import leafmap
 APP_TITLE= 'KOMMY MAP VISUALIZATION'
 APP_SUB_TITLE='CMT PROOPTIKI 2022'
 
