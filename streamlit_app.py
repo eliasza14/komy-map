@@ -20,8 +20,8 @@ def main():
     m.add_geojson(url, layer_name="Countries")
     m.to_streamlit(width=400, height=800)
     
-    m.add_gdf(url, epsg="4326")
-    m.to_streamlit(width=400, height=800)
+    # m.add_gdf(url, epsg="4326")
+    # m.to_streamlit(width=400, height=800)
 
     # m = merge.explore(
     #     location=[40,23],
