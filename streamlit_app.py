@@ -1,5 +1,5 @@
 import streamlit as st
-import geopandas gpd
+import geopandas as gpd
 import folium
 from   streamlit_folium import st_folium
 import leafmap.kepler as leafmap
