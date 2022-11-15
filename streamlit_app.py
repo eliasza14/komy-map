@@ -37,7 +37,14 @@ def main():
     #cm.palettes.dem
     #cm.plot_colormap(colors=cm.palettes.dem, axis_off=True)
     #cm.palettes.ndvi
-    cm.plot_colormap(colors=cm.palettes.ndvi)
+    #cm.plot_colormap(colors=cm.palettes.ndvi)
+    data = leafmap.examples.datasets.countries_geojson
+    m = leafmap.Map()
+    m.add_data(
+    data, column='POP_EST', scheme='Quantiles', cmap='Blues', legend_title='Population'
+    )
+    m.to_streamlit(width=400, height=800)
+
     # m.add_gdf(url, layer_name="Countries")
     # m.to_streamlit(width=400, height=800)
 
