@@ -22,19 +22,19 @@ def main():
     # m.add_colormap('Πληθυσμός',width=8.0,height=0.4,orientation='horizontal',vmin=0,vmax=4000,)
     # m.to_streamlit(width=400, height=800)
     
-    m = leafmap.Map()
-    m.add_basemap("OpenTopoMap")
-    m.add_colormap(
-    'terrain',
-    label="Elevation",
-    width=0.4,
-    height=4,
-    orientation='vertical',
-    vmin=0,
-    vmax=4000,
-)
+    # m = leafmap.Map()
+    # m.add_basemap("OpenTopoMap")
+    # m.add_colormap(
+    # 'terrain',
+    # label="Elevation",
+    # width=0.4,
+    # height=4,
+    # orientation='vertical',
+    # vmin=0,
+    # vmax=4000,
+    # )
 
-
+    cm.palettes.dem
 
     # m.add_gdf(url, layer_name="Countries")
     # m.to_streamlit(width=400, height=800)
