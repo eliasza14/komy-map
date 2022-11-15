@@ -15,7 +15,7 @@ def main():
 
     #merge= geopandas.read_file('per_enotites.geojson')
     url='per_enotites.geojson'
-    
+    cm.plot_colormaps(width=12, height=0.4)
     m = leafmap.Map(center=[50, -110], zoom=2)
     polygons = 'https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_states.json'
     m.add_geojson(url, layer_name="Countries")
