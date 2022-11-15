@@ -13,7 +13,7 @@ def main():
     st.set_page_config(APP_TITLE)
     st.title(APP_TITLE)
 
-    # merge= geopandas.read_file('per_enotites.geojson')
+    merge= geopandas.read_file('per_enotites.geojson')
     url='per_enotites.geojson'
     
     m = leafmap.Map(center=[50, -110], zoom=2)
@@ -21,7 +21,7 @@ def main():
     m.add_geojson(url, layer_name="Countries")
     m.to_streamlit(width=400, height=800)
 
-    m = m.explore(
+    m = merge.explore(
         location=[40,23],
         zoom_start=6,
         tiles=None,
@@ -36,7 +36,7 @@ def main():
         name="periferiakes enotites", # name of the layer in the map
         show=False
     )
-    m.to_streamlit(width=400, height=800)
+    merge.to_streamlit(width=400, height=800)
 
     # merge2= geopandas.read_file('periferies.json')
 
