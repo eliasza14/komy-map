@@ -36,7 +36,8 @@ def main():
 
     #cm.palettes.dem
     #cm.plot_colormap(colors=cm.palettes.dem, axis_off=True)
-    cm.palettes.ndvi
+    #cm.palettes.ndvi
+    cm.plot_colormap(colors=cm.palettes.ndvi)
     # m.add_gdf(url, layer_name="Countries")
     # m.to_streamlit(width=400, height=800)
 
