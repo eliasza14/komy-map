@@ -2,9 +2,9 @@ import streamlit as st
 import geopandas as gpd
 import folium
 from   streamlit_folium import st_folium
-import leafmap.kepler as leafmap
-import leafmap.colormaps as cm
-import leafmap as lm
+#import leafmap.kepler as leafmap
+#import leafmap.colormaps as cm
+import leafmap 
 APP_TITLE= 'KOMMY MAP VISUALIZATION'
 APP_SUB_TITLE='CMT PROOPTIKI 2022'
 
@@ -40,7 +40,7 @@ def main():
     #cm.palettes.ndvi
     #cm.plot_colormap(colors=cm.palettes.ndvi)
     #data = leafmap.examples.datasets.countries_geojson
-    m = lm.Map()
+    m = leafmap.Map()
     m.add_data(
     url, column='Πληθυσμός', scheme='Quantiles', cmap='Blues', legend_title='Population'
     )
